@@ -1,7 +1,7 @@
 <template>
   <nav class="bg-success px-3 h-100">
     <router-link class="d-flex" :to="{ name: 'Home' }">
-      <img class="img-fluid" alt="logo" src="../assets/img/GregsList.svg" />
+      <img class="img-fluid mt-3" alt="logo" src="../assets/img/GregsList.svg" />
     </router-link>
     <div id="navbarText">
       <ul class="navbar-nav me-auto">
@@ -25,8 +25,9 @@
                 :src="user.picture"
                 alt="user photo"
                 height="40"
-                class="rounded"
+                class="rounded mt-2"
               />
+              
             </div>
             <div
               class="dropdown-menu p-0 list-group"
@@ -54,24 +55,24 @@
         <li class="d-flex flex-column">
           <router-link
             :to="{ name: 'Cars' }"
-            class="btn selectable text-uppercase"
+            class="btn selectable text-uppercase text-white"
           >
             Cars
           </router-link>
-          <!-- FIXME change to Houses -->
-          <!-- <router-link
-            :to="{ name: 'About' }"
-            class="btn text-success lighten-30 selectable text-uppercase"
+
+          <router-link
+            :to="{ name: 'Houses' }"
+            class="btn text-white lighten-30 selectable text-uppercase"
           >
             Houses
-          </router-link> -->
-          <!-- FIXME change to Jobs -->
-          <!-- <router-link
-            :to="{ name: 'About' }"
+          </router-link>
+
+          <router-link
+            :to="{ name: 'Jobs' }"
             class="btn text-success lighten-30 selectable text-uppercase"
           >
             Jobs
-          </router-link> -->
+          </router-link>
         </li>
       </ul>
     </div>
